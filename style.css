@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff6fb;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ff8fb1;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #ffd6e0, #ffeaf2);
+}
+
+.products, .games {
+    padding: 40px;
+    text-align: center;
+}
+.companions {
+    padding: 40px;
+    text-align: center;
+}
+
+
+.card {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff4d88;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e6005c;
+}
+.about {
+    padding: 50px 40px;
+    text-align: center;
+    background: linear-gradient(to right, #ffeaf2, #ffd6e0);
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff4d88;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-items {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: white;
+    color: black;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.cart:hover .cart-items {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff8fb1;
+    color: white;
+}
